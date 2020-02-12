@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="待付款" />
+
+        <RadioButton
+            android:id="@+id/rb_evaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="待收货" />
+
+        <RadioButton
+            android:id="@+id/rb_ping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="待评价" />
+
+        <RadioButton
+            android:id="@+id/rb_over"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="已完成" />
+
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
